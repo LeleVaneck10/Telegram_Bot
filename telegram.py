@@ -15,9 +15,19 @@ def help(update, context):
     """
     /start -> Welcome to the channel
     /help -> This paticular message
-    /content -> About various Playlist of LeleVaneck
+    /content -> About various Playlist of Programming with Mosh
     /Python -> The first video from python playlist
-    /SQL -> The first video from Java Playlist
+    /Java -> The first video from Java Playlist
     /contact -> contact information
     """
     )
+    
+def content(update, context):
+    update.message.reply_text("We have various playlists and articles available")
+    
+def Python(update, context):
+    update.message.reply_text("tutorial link : https://youtu.be/_uQrJ0TkZlc")
+    
+    
+def Java(update, context):
+    update.message.reply_text("tutorial link : https://youtu.be/eIrMbAQSU34")
